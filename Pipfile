@@ -9,6 +9,13 @@ name = "pypi"
 
 ipykernel = "*"
 numpy = "*"
+matplotlib = "*"
+spyder = "*"
+flask = "*"
 
 
 [dev-packages]
+
+ipython = "*"
+mypy = "*"
+pylint = "*"
