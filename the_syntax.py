@@ -24,9 +24,9 @@ for thing in list_of_things:
 
 # If statements are easy to understand
 if x is not y:
-    print("10 is not 15!")
+    print(f"{x} is not {y}!")
 else:
-    print("10 is 15!!!")
+    print(f"{x} is {y}!!!")
 
 if 1 in list_of_things:
     one_is_in_things = True
@@ -48,15 +48,17 @@ for method in dir(list_of_things):
     print(method)
 
 list_of_things.append(0)
+list_of_things.append(0.0)
 list_of_things.append("")
+list_of_things.append(None)
 list_of_things.append("six")
 print(list_of_things)
 
 # Adding a list to another list returns a new list
-list_of_things = list_of_things + [7, 8, 9, 10]
+new_list_of_things = list_of_things + [7, 8, 9, 10]
 
 # Python has a concept of truthyness so 0 and empty strings are False
-for a_thing in list_of_things:
+for a_thing in new_list_of_things:
     if a_thing:
         print(a_thing)
 
